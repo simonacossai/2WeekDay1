@@ -86,48 +86,6 @@ footer.footer .newsletter .form-element{
 }
 
 
-footer.footer .instagram div > img{
-    display: inline-block;
-    width: 25%;
-    height: 50%;
-    margin: .3rem .4rem;
-}
-
-footer.footer .follow div i{
-    color: #f6f6f6;
-    padding: 0 .4rem;
-    font-size: 25px;
-}
-
-footer.footer .follow div i:hover{
-    color:#b28957;
-    transition: .3s all ease;
-}
-
-.phone{
-    transform: rotate(90deg);
-    color:#b28957;
-    margin-right: 10px;
-}
-footer.footer .move-up{
-    position: absolute;
-    right: 6%;
-    top: 50%;
-}
-
-footer.footer .move-up span{
-    color:#b28957;
-    transition: .3s all ease;
-}
-
-footer.footer .move-up span:hover{
-    color: var(--white);
-    cursor: pointer;
-}
-.call:hover{
-text-decoration: none;
-}
-
 @media only screen and (max-width: 1130px){
 
     footer.footer .container{
