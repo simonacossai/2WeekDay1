@@ -1,0 +1,142 @@
+
+/*nvigation bar*/
+
+.nav-item{
+    padding: 0 18px;
+}
+.navbar-brand{
+    display: flex;
+}
+.navbar-brand img{
+    margin-right:20px;
+}
+
+.brandName{
+    text-align: left;
+    color: white;
+    position: absolute;
+    left:90px;
+    font-size: 30px;
+    font-weight: 400;
+    position: sticky;
+}
+
+
+
+/*table section*/
+
+.productTitle{
+    padding: 40px 0 20px 0;
+    font-size: 50px;
+}
+   td{
+       text-align:center;
+       justify-content: center;
+       align-items: center;
+   }
+
+   @media(max-width: 600px){
+    .image-table{
+        text-align:center;
+        padding: 0px;
+    }
+    .products{
+        width: 250px;
+        height: 250px;
+    }
+ 
+    .card{
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+    }
+ 
+   }
+
+
+   
+footer.footer{
+    margin-top: 5rem;
+    height: 100%;
+    background:#343a40;
+    position: relative;
+    text-align:center;
+}
+
+footer.footer .container{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: var(--white);
+}
+
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+
+
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+footer.footer .follow div i{
+    color: #f6f6f6;
+    padding: 0 .4rem;
+    font-size: 25px;
+}
+
+footer.footer .follow div i:hover{
+    color:#b28957;
+    transition: .3s all ease;
+}
+
+.phone{
+    transform: rotate(90deg);
+    color:#b28957;
+    margin-right: 10px;
+}
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color:#b28957;
+    transition: .3s all ease;
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+.call:hover{
+text-decoration: none;
+}
+
+@media only screen and (max-width: 1130px){
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+h3{
+    color:white;
+}
