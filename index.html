@@ -55,16 +55,16 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="#products">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link" href="#contactUs">Contact us</a>
               </li>
             </ul>
           </div>
       </nav>
 
-      <table class="image-table">
+      <table class="image-table" id="products">
         <tbody>
          <tr>
           <td>
@@ -116,13 +116,23 @@
          </tr>
         </tbody>
        </table>
+
+       <section id="contactUs">
+           <div class="contact">
+               <h2>Contact us</h2>
+               <input type="text" placeholder="Name" id="name"/>
+               <input type="email" placeholder="Email" id="email"/>
+               <input type="text" placeholder="ask your question here" id="message"/>
+               <button type="submit" class="submitButton" id="submitButton" onClick="sendData()">Submit</button>
+           </div>
+       </section>
  
 
 
        <footer class="footer">
         <div class="container">
           <div class="about-us">
-            <h2>Dove siamo</h2>
+            <h2>You can find us here:</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.913624040803!2d14.49737181527123!3d40.82986087931916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bba96bb7f90c1%3A0xc4a70856dc550bf6!2sVia%20Torricelli%2C%2080047%20San%20Giuseppe%20NA!5e0!3m2!1sit!2sit!4v1601905938932!5m2!1sit!2sit" 
             width="270" height="210" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
            
@@ -131,10 +141,11 @@
     
     
           <div class="follow">
+              <h3>Amazona shop</h3>
             <h3>Via Torriccelli, 97</h3>
-            <h3 style="color:#fff;  margin-top: 30px; font-weight: bold;">Chiama per prenotare:</h3>
+            <h3 style="color:#fff;  margin-top: 30px; font-weight: bold;">For info:</h3>
             <a href="tel:333 4445679" class="call">
-              <h5 style="color:#fff;"><i class="fa fa-phone phone" aria-hidden="true"></i>333 4445679</h5>
+              <h5 style="color:#fff;">333 4445679</h5>
             </a>
           </div>
         </div>
@@ -142,30 +153,9 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script> 
-    let products=[
-        {
-            name: "Brown bag",
-            description: "casual brown bag, medium size. Great for students",
-            price: 20
-        },
-        {
-            name: "Elegant bag",
-            description: "elegant bag for special events",
-            price: 45
-        },
-        {
-            name: "Backpack",
-            description: "Backpack perfect for the back to school",
-            price: 32
-        },
-        {
-            name: "Clutch",
-            description: "Very unusual model of bag, but very cool at the moment",
-            price: 20
-        },
-        
-    ]
+    console.log("hi");
     </script>
+    <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

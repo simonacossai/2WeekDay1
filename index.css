@@ -1,4 +1,7 @@
 
+h3{
+    color:white;
+}
 /*nvigation bar*/
 
 .nav-item{
@@ -35,26 +38,6 @@
        align-items: center;
    }
 
-   @media(max-width: 600px){
-    .image-table{
-        text-align:center;
-        padding: 0px;
-    }
-    .products{
-        width: 250px;
-        height: 250px;
-    }
- 
-    .card{
-        width: 300px;
-        text-align: center;
-        align-items: center;
-        padding: 20px;
-    }
- 
-   }
-
-
    
 footer.footer{
     margin-top: 5rem;
@@ -85,6 +68,44 @@ footer.footer .newsletter .form-element{
     display: inline-block;
 }
 
+/*Contact us section*/
+.contact{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 200px 50px 200px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px 8px #8888886e;
+    border-right: 7px solid #343a40;
+    padding: 30px;
+}
+
+input{
+    display: block;
+    margin: 20px auto;
+    height:40px;
+    border-color: #343a40; 
+    width: 300px;
+    border-radius: 4px;
+}
+
+.submitButton{
+    border-color: #343a40; 
+    color:#343a40;
+    background-color: transparent;
+    transition: all ease .7s;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+}
+.submitButton:hover{
+    background-color: #343a40;
+    color:#fff;
+    
+}
 
 @media only screen and (max-width: 1130px){
 
@@ -95,6 +116,28 @@ footer.footer .newsletter .form-element{
 }
 
 
-h3{
-    color:white;
-}
+
+@media(max-width: 600px){
+    .image-table{
+        text-align:center;
+        padding: 0px;
+    }
+    .products{
+        width: 250px;
+        height: 250px;
+    }
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .card{
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+    }
+ 
+   }
